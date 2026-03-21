@@ -1,0 +1,120 @@
+:root {
+    --base-bg: #f9fbff;
+    --card-bg: #ffffff;
+    --primary: #0d6efd;
+    --text: #1f2937;
+}
+
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background-color: var(--base-bg);
+    color: var(--text);
+}
+
+.testimonial-section {
+    padding: 80px 12px;
+}
+
+.testimonial-title .rounded-pill {
+    background-color: #e9efff;
+    color: var(--primary);
+}
+
+.testimonial-item {
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.testimonial-item:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 45px rgba(43, 65, 97, 0.15);
+    border: 1px solid rgba(13, 110, 253, 0.2);
+}
+
+.testimonial-carousel {
+    position: relative;
+}
+
+.testimonial-text {
+    background-color: var(--card-bg);
+    border: 1px solid rgba(0,0,0,0.08);
+    border-radius: 14px;
+}
+
+.testimonial-text p {
+    margin-bottom: 16px;
+    line-height: 1.7;
+    color: #334155;
+}
+
+.testimonial-text h5 {
+    margin-bottom: 6px;
+    font-weight: 700;
+}
+
+.testimonial-text span {
+    color: #64748b;
+}
+
+.owl-carousel .owl-dots .owl-dot span {
+    width: 12px;
+    height: 12px;
+    display: block;
+    border-radius: 50%;
+    background: #cbd5e1;
+}
+
+.owl-carousel .owl-dots .owl-dot.active span {
+    background: var(--primary);
+}
+
+.owl-carousel .owl-nav {
+    display: flex !important;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    top: 46%;
+    left: 0;
+    z-index: 20;
+    pointer-events: none;
+}
+.modal-text{
+    color: black;
+    font-size: large;
+}
+
+.owl-carousel .owl-nav button.owl-prev,
+.owl-carousel .owl-nav button.owl-next {
+    pointer-events: all;
+    position: relative;
+    top: 0;
+    transform: translateY(0);
+    background-color: rgba(13, 110, 253, 0.9);
+    color: #fff;
+    border: none;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    transition: background-color 0.25s ease, transform 0.25s ease;
+}
+
+.owl-carousel .owl-nav button.owl-prev {
+    left: -22px;
+}
+
+.owl-carousel .owl-nav button.owl-next {
+    right: -22px;
+}
+
+.owl-carousel .owl-nav button.owl-prev:hover,
+.owl-carousel .owl-nav button.owl-next:hover {
+    background-color: #0056b3;
+    transform: translateY(-50%) scale(1.06);
+}
+
+.owl-carousel .owl-nav button.owl-prev:focus,
+.owl-carousel .owl-nav button.owl-next:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(13, 110, 253, 0.25);
+}

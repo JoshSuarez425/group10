@@ -16,6 +16,44 @@ body {
     color: var(--text);
     font-family: 'Space Grotesk', sans-serif;
     overflow-x: hidden;
+    padding-top: 90px;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem 3.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.65);
+    z-index: 1000;
+}
+
+.logo {
+    color: var(--accent);
+    font-size: 2.4rem;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+nav a {
+    margin-left: 2rem;
+    color: var(--text);
+    text-decoration: none;
+    font-size: 1.8rem;
+    font-weight: 500;
+    transition: color 0.2s ease, border-bottom 0.3s ease;
+    border-bottom: 3px solid transparent;
+    padding: 0.3rem 0;
+}
+
+nav a:hover,
+nav a.active {
+    color: var(--accent);
+    border-bottom: 3px solid var(--accent);
 }
 
 

@@ -175,6 +175,9 @@ text-align: center;
     font-size: 1.8rem;
     font-weight: 500;
 }
+.textstyle{
+    font-size: large;
+}
 
 .social-icons a{
     display: inline-flex;
